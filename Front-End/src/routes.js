@@ -16,6 +16,7 @@ const routes = [
     path: "project-commath",
     element: <DashboardLayout />,
     children:[
+      { path: "/", element: <AccountView /> },
       { path: "account", element: <AccountView /> },
       { path: "page1", element: <Page1 /> },
       { path: "page2", element: <Page2 /> },
