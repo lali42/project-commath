@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import {
   Avatar,
   Box,
-  Button,
   Divider,
   Drawer,
   Hidden,
@@ -13,52 +12,51 @@ import {
   makeStyles
 } from '@material-ui/core';
 import {
-  AlertCircle as AlertCircleIcon,
-  BarChart as BarChartIcon,
-  Lock as LockIcon,
-  Settings as SettingsIcon,
-  ShoppingBag as ShoppingBagIcon,
-  User as UserIcon,
-  UserPlus as UserPlusIcon,
-  Users as UsersIcon,
   Book as BookIcon
 } from 'react-feather';
 import NavItem from './NavItem';
+import ImgPro from "../../../../src/Profile.jpg";
+
 
 const user = {
-  avatar: '/static/images/avatars/avatar_6.png',
-  jobTitle: 'Senior Developer',
-  name: 'Katarina Smith'
+  // avatar: '../../../../src/Profile.jpg',
+  jobTitle: '61114440557',
+  name: 'Lalita Suwanna'
 };
 
 const items = [
   {
-    href: '/project-commath/page1',
+    href: '/project-commath/',
+    icon: BookIcon,
+    title: 'หน้าแรก'
+  },
+  {
+    href: '/project-commath/b2s',
     icon: BookIcon,
     title: 'บทที่ 1'
   },
   {
-    href: '/project-commath/page2',
+    href: '/project-commath/elimination',
     icon: BookIcon,
     title: 'บทที่ 2'
   },
   {
-    href: '/project-commath/page3',
+    href: '/project-commath/interpolation',
     icon: BookIcon,
     title: 'บทที่ 3'
   },
   {
-    href: '/project-commath/page4',
+    href: '/project-commath/differentiation',
     icon: BookIcon,
     title: 'บทที่ 4'
   },
   {
-    href: '/project-commath/page5',
+    href: '/project-commath/integration',
     icon: BookIcon,
     title: 'บทที่ 5'
   },
   {
-    href: '/project-commath/page6',
+    href: '/project-commath/root-finding',
     icon: BookIcon,
     title: 'บทที่ 6'
   },
@@ -106,7 +104,7 @@ const NavBar = ({ onMobileClose, openMobile }) => {
         <Avatar
           className={classes.avatar}
           component={RouterLink}
-          src={user.avatar}
+          src={ImgPro}
           to="account"
         />
         <Typography

@@ -5,23 +5,24 @@ import typography from './typography';
 const theme = createMuiTheme({
   palette: {
     background: {
-      dark: '#22303c',
-      default: '#ffffff',
-      paper: '#22303c'
+      dark: "linear-gradient(90deg, rgba(73,129,154,1) 0%, rgba(232,80,91,1) 100%)",
+      default: '#000',
+      paper: '#fff'
     },
     primary: {
-      main: '#15202b'
+      main: '#000'
     },
     secondary: {
-      main: '#ffffff'
+      main: '#0d415b'
     },
     text: {
-      primary: '#ffffff',
-      secondary:'#8899ac'
+      primary: '#000',
+      secondary:'#E8505B'
     }
   },
   shadows,
   typography
 });
+
 
 export default theme;

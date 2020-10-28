@@ -14,7 +14,7 @@ const useStyles = makeStyles(() => createStyles({
       width: '100%'
     },
     body: {
-      backgroundColor: '#f4f6f8',
+      background: "linear-gradient(90deg, rgba(73,129,154,1) 0%, rgba(232,80,91,1) 100%)" ,
       height: '100%',
       width: '100%'
     },
@@ -24,7 +24,7 @@ const useStyles = makeStyles(() => createStyles({
     '#root': {
       height: '100%',
       width: '100%'
-    }
+    },
   }
 }));
 
@@ -33,5 +33,6 @@ const GlobalStyles = () => {
 
   return null;
 };
+
 
 export default GlobalStyles;

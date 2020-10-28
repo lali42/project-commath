@@ -14,7 +14,7 @@ import {
 import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
-import Logo from '../../components/Logo';
+import Logo from '../../../src/images/logo.png';
 
 const useStyles = makeStyles(() => ({
   root: {},
@@ -39,8 +39,10 @@ const TopBar = ({
       {...rest}
     >
       <Toolbar>
-        <RouterLink to="/">
-          <Logo />
+        <RouterLink to="/project-commath" style={{
+          color: "#fff"
+        }}>
+          Home
         </RouterLink>
         <Box flexGrow={1} />
         <Hidden mdDown>

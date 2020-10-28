@@ -1,6 +1,7 @@
 import React from "react";
 import DashboardLayout from "./layouts/DashboardLayout";
 import AccountView from './views/account/AccountView';
+import Home from './views/Home'
 import Page1 from "./views/Page1";
 import Page2 from "./views/Page2";
 import Page3 from "./views/Page3";
@@ -16,14 +17,14 @@ const routes = [
     path: "project-commath",
     element: <DashboardLayout />,
     children:[
-      { path: "/", element: <AccountView /> },
+      { path: "/", element: <Home /> },
       { path: "account", element: <AccountView /> },
-      { path: "page1", element: <Page1 /> },
-      { path: "page2", element: <Page2 /> },
-      { path: "page3", element: <Page3 /> },
-      { path: "page4", element: <Page4 /> },
-      { path: "page5", element: <Page5 /> },
-      { path: "page6", element: <Page6 /> },
+      { path: "b2s", element: <Page1 /> },
+      { path: "elimination", element: <Page2 /> },
+      { path: "interpolation", element: <Page3 /> },
+      { path: "differentiation", element: <Page4 /> },
+      { path: "integration", element: <Page5 /> },
+      { path: "root-finding", element: <Page6 /> },
     ]
   },
 ];
